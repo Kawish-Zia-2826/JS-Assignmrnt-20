@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+
+</script>
+</head>
+<body>
+
+    
+    <p>This is a paragraph with little content. <span style="display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptatibus, in accusantium molestiae quisquam amet quia veniam harum nesciunt dolor iusto tenetur officiis sit numquam, ullam consequatur dicta autem vero?</span></p>
+    <button>Show More</button>
+
+
+    <!-- sign up form -->
+     <form id="signupForm" action="/signup" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <input type="button" onclick="abc()" value="Submit">
+    </form>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody id="tb">
+      
+          <tr>
+          
+            <td>Larry</td>
+         
+            <td>@twitter</td>
+            <td><button type="button" class="btn btn-warning" onclick="$(this).parent().parent().remove()">Warning</button></td>
+            <td><button class="btn btn-primary" onclick="abc()">edit</button></td>
+          </tr>
+        </tbody>
+      </table>
+
+
+   
+    <script src="app.js"></script>
+</body>
+</html>
